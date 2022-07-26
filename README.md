@@ -6,7 +6,7 @@ SSAFY 8기 대전 5반 5조🔥
 ## 😎스터디 인원
 김아린 [@rin-k645](https://github.com/rin-k645)
 
-김주성
+김주성 [@Sigmaflo](https://github.com/Sigmaflo)
 
 김지환
 
