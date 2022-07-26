@@ -26,7 +26,7 @@ SSAFY 8기 대전 5반 5조🔥
 |[백준1100](https://www.acmicpc.net/problem/1100)|       |       |       |       |
 |[백준1059](https://www.acmicpc.net/problem/1059)|       |       |       |       |
 |[백준1051](https://www.acmicpc.net/problem/1051)|       |       |       |       |
-|[백준2468](https://www.acmicpc.net/problem/2468)|       |       |       |       |
+|[백준2468](https://www.acmicpc.net/problem/2468)|       |   ✅    |       |       |
 |[백준2573](https://www.acmicpc.net/problem/2573)|       |       |       |       |
 
 &nbsp;
