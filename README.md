@@ -8,9 +8,9 @@ SSAFY 8기 대전 5반 5조🔥
 
 김주성 [@Sigmaflo](https://github.com/Sigmaflo)
 
-김지환
+김지환 
 
-이현구
+이현구 [@Leeh9] (https://github.com/Leeh9)
 
 &nbsp;
 
