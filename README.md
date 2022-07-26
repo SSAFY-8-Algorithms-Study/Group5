@@ -10,7 +10,7 @@ SSAFY 8기 대전 5반 5조🔥
 
 김지환 
 
-이현구 [@Leeh9] (https://github.com/Leeh9)
+이현구
 
 &nbsp;
 
