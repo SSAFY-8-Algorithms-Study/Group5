@@ -15,7 +15,6 @@ public class Main {
 		for (int i = 0; i < N; i++) {
 			for (int j = 0; j < N; j++) {
 				arr[i][j] = sc.nextInt();
-				arr_rain[i][j] = arr[i][j];
 				if (arr[i][j] > max) {
 					max = arr[i][j];
 				}
@@ -37,8 +36,6 @@ public class Main {
 			for (int i = 0; i < N; i++) {
 				for (int j = 0; j < N; j++) {
 					if (arr[i][j] != 0) {
-						int cnt = 0;
-
 						if (!visit[i][j]) {
 							DFS(i, j, visit);
 							only_block++;
