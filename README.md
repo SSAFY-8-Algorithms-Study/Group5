@@ -10,7 +10,7 @@ SSAFY 8기 대전 5반 5조🔥
 
 김주성 [@Sigmaflo](https://github.com/Sigmaflo)
 
-김지환 
+김지환 [@wlghks960](https://github.com/wlghks960)
 
 이현구 [@Leeh9](https://github.com/Leeh9)
 
@@ -39,10 +39,10 @@ PR 공통 양식에 맞춰서 올려주세요
 ### 1주차
 |문제|김아린|김주성|김지환|이현구|
 |------|------|------|------|------|
-|[백준1100](https://www.acmicpc.net/problem/1100)|  ✅  |  ✅  |       |  ✅ |
+|[백준1100](https://www.acmicpc.net/problem/1100)|  ✅  |  ✅  |  ✅    |  ✅ |
 |[백준1059](https://www.acmicpc.net/problem/1059)|       |  ✅  |       |  ✅ |
-|[백준1051](https://www.acmicpc.net/problem/1051)|  ✅  |  ✅  |       |  ✅ |
-|[백준2468](https://www.acmicpc.net/problem/2468)|  ✅  |  ✅  |       |  ✅ |
+|[백준1051](https://www.acmicpc.net/problem/1051)|  ✅  |  ✅  |  ✅   |  ✅ |
+|[백준2468](https://www.acmicpc.net/problem/2468)|  ✅  |  ✅  |  ✅   |  ✅ |
 |[백준2573](https://www.acmicpc.net/problem/2573)|       |  ✅  |       |  ✅ |
 
 &nbsp;
