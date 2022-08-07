@@ -78,7 +78,8 @@ public class BOJ_2304_김지환 {
 //			if((current_low-maxHeight_row) >= (list.get(i).low - maxHeight_row))break;
 //			current_high = list.get(i).high;
 //			current_low = list.get(i).low;
-			System.out.println(list.get(list.size()-1-i));
+// 			System.out.println(list.get(list.size()-1-i));
+			//현재 높이에서 가장 큰 다각형의 높이까지 현재 높이보다 큰 높이가 있으면 
 			if(current_high <= list.get(list.size()-1-i).high) {
 				sum+=(current_low-list.get(list.size()-1-i).low)*current_high;
 				current_low = list.get(list.size()-1-i).low;
