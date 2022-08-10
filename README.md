@@ -61,10 +61,10 @@ PR 공통 양식에 맞춰서 올려주세요
 ### 3주차
 |문제|김아린|김주성|김지환|이현구|
 |------|------|------|------|------|
-|[백준1193](https://www.acmicpc.net/problem/2563)|    |    |     | ✅    |
-|[백준16922](https://www.acmicpc.net/problem/2304)|    |    |      |     |
-|[백준1213](https://www.acmicpc.net/problem/2630)|    |    |     |     |
-|[백준2178](https://www.acmicpc.net/problem/1931)|    |    |     |    |
-|[백준3425](https://www.acmicpc.net/problem/2206)|     |    |     |     |
+|[백준1193](https://www.acmicpc.net/problem/1193)  |    |     | ✅    |
+|[백준16922](https://www.acmicpc.net/problem/16922) |    |      |     |
+|[백준1213](https://www.acmicpc.net/problem/1213)  |    |     |     |
+|[백준2178](https://www.acmicpc.net/problem/2178)|    |    |     |    |
+|[백준3425](https://www.acmicpc.net/problem/3425)|     |    |     |     |
 
 &nbsp;
