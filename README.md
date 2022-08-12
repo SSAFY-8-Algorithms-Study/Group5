@@ -64,7 +64,7 @@ PR 공통 양식에 맞춰서 올려주세요
 |[백준1193](https://www.acmicpc.net/problem/1193)   |    |    |    | ✅ |  
 |[백준16922](https://www.acmicpc.net/problem/16922) | ✅ |    |    | ✅ |
 |[백준1213](https://www.acmicpc.net/problem/1213)   |    |    |    | ✅ |
-|[백준2178](https://www.acmicpc.net/problem/2178)   | ✅ |    |    |    |
+|[백준2178](https://www.acmicpc.net/problem/2178)   | ✅ |    |    | ✅ |
 |[백준3425](https://www.acmicpc.net/problem/3425)   |    |    |    |    |
 
 &nbsp;
