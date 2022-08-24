@@ -79,3 +79,12 @@ PR 공통 양식에 맞춰서 올려주세요
 |[백준2447](https://www.acmicpc.net/problem/2447)   | ✅ | ✅ |✅ | ✅ |
 
 &nbsp;
+
+### 4주차
+|문제|김아린|김주성|김지환|이현구|
+|------|------|------|------|------|
+|[백준2596](https://www.acmicpc.net/problem/2596)   |  |  |  |  |  
+|[백준18429](https://www.acmicpc.net/problem/18429) |  |  |  |  |
+|[백준16918](https://www.acmicpc.net/problem/16918) |  |  |  |  |
+|[백준17142](https://www.acmicpc.net/problem/17142) |  |  |  |  |
+|[백준16235](https://www.acmicpc.net/problem/16235) |  |  |  |  |
