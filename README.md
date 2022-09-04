@@ -98,7 +98,7 @@ Commit : 공통 양식에 맞춰서 올려주세요 ex) BOJ_문제번호_본인�
 |------|------|------|------|------|------|
 |[백준10162](https://www.acmicpc.net/problem/10162) | ✅ | ✅ | ✅ | ✅|✅|
 |[백준9372](https://www.acmicpc.net/problem/9372)   | ✅ | ✅ | ✅ |   |✅|
-|[백준10025](https://www.acmicpc.net/problem/10025) | ✅ | ✅ | ✅ |✅ |  |
+|[백준10025](https://www.acmicpc.net/problem/10025) | ✅ | ✅ | ✅ |✅ |✅|
 |[백준2922](https://www.acmicpc.net/problem/2922)   |    |    |   |   |   |
 |[백준2917](https://www.acmicpc.net/problem/2917)   |    |    |   |   |   |
  
