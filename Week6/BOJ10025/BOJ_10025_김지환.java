@@ -20,7 +20,7 @@ public class BOJ_10025_김지환 {
 		StringTokenizer st = new StringTokenizer(in.readLine());
 		int N  = Integer.parseInt(st.nextToken());
 		int K  = Integer.parseInt(st.nextToken());
-		arr = new int[31];
+		arr = new int[1000001];
 		list = new LinkedList<>();
 		for(int i=0; i<N;i++) {
 			st = new StringTokenizer(in.readLine());
