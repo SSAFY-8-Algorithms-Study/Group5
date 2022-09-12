@@ -107,11 +107,11 @@ Commit : 공통 양식에 맞춰서 올려주세요 ex) BOJ_문제번호_본인�
 ### 7주차
 |문제|김아린|김주성|김지환|이현구|최정온
 |------|------|------|------|------|------|
-|[백준9655](https://www.acmicpc.net/problem/9655)   |  |  |✅  | ✅ |  |
-|[백준20363](https://www.acmicpc.net/problem/20363) |  |  |✅  |✅  |  |
-|[백준2310](https://www.acmicpc.net/problem/2310)   |  |  |  | ✅ |  |
-|[백준22116](https://www.acmicpc.net/problem/22116) |  |  |  |  |  |
-|[백준15997](https://www.acmicpc.net/problem/15997) |  |  |  |  |  |
+|[백준9655](https://www.acmicpc.net/problem/9655)   | ✅ |  |✅  | ✅ |  |
+|[백준20363](https://www.acmicpc.net/problem/20363) | ✅ |  |✅  |✅  |  |
+|[백준2310](https://www.acmicpc.net/problem/2310)   |    |  |  | ✅ |  |
+|[백준22116](https://www.acmicpc.net/problem/22116) | ✅ |  |  |  |  |
+|[백준15997](https://www.acmicpc.net/problem/15997) |    |  |  |  |  |
 
 
  
