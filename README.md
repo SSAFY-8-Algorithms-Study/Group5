@@ -120,7 +120,7 @@ Commit : 공통 양식에 맞춰서 올려주세요 ex) BOJ_문제번호_본인�
 |------|------|------|------|------|------|
 |[백준1764](https://www.acmicpc.net/problem/1764)   | ✅ | ✅ | ✅ | ✅ |  |
 |[백준11387](https://www.acmicpc.net/problem/11387) |    | ✅ |✅  | ✅ |  |
-|[백준1325](https://www.acmicpc.net/problem/1325)   | ✅ |    |  |  |  |
-|[백준17070](https://www.acmicpc.net/problem/17070) | ✅ |    |  |  | ✅ |
+|[백준1325](https://www.acmicpc.net/problem/1325)   | ✅ |    |    |     |  |
+|[백준17070](https://www.acmicpc.net/problem/17070) | ✅ |    |    | ✅ |  |
 |[백준1504](https://www.acmicpc.net/problem/1504)   | ✅ |    |✅  | ✅ |  |
  
