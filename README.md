@@ -14,8 +14,6 @@ SSAFY 8기 대전 5반 5조🔥
 
 이현구 [@Leeh9](https://github.com/Leeh9)
 
-최정온 [@choijeongon](https://github.com/choijeongon)
-
 &nbsp;
 
 ## 📃스터디 규칙
