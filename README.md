@@ -153,3 +153,14 @@ Commit : 공통 양식에 맞춰서 올려주세요 ex) BOJ_문제번호_본인�
 |[백준6987](https://www.acmicpc.net/problem/6987)   |  |  |  |  |  
 
 &nbsp;
+
+ ### 11주차
+|문제|김아린|김주성|김지환|이현구|
+|------|------|------|------|------|
+|[백준3187](https://www.acmicpc.net/problem/3187)   |  |  |  |  |  
+|[백준11403](https://www.acmicpc.net/problem/11403) |  |  |  |  |  
+|[백준2624](https://www.acmicpc.net/problem/2624)   |  |  |  |  |  
+|[백준8982](https://www.acmicpc.net/problem/8982)   |  |  |  |  |  
+|[백준17143](https://www.acmicpc.net/problem/17143) |  |  |  |  |  
+
+&nbsp;
