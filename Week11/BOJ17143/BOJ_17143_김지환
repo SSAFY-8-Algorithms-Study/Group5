@@ -1,0 +1,155 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class Main {
+
+	static class Shark {
+		int speed;
+		int dir;
+		int size;
+
+		public Shark(int speed, int dir, int size) {
+			super();
+			this.speed = speed;
+			this.dir = dir;
+			this.size = size;
+		}
+
+		@Override
+		public String toString() {
+			return "Shark [speed=" + speed + ", dir=" + dir + ", size=" + size + "]";
+		}
+
+	}
+
+	// 1 : up, 2 : down, 3 : right, 4:left;
+	static int[] di = { 0, -1, 1, 0, 0 };
+	static int[] dj = { 0, 0, 0, 1, -1 };
+	static int R, C, M;
+	static int r, c, s, d, z;
+	static Shark[][] sharks, end;
+	static int ans;
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(in.readLine());
+
+		R = Integer.parseInt(st.nextToken());
+		C = Integer.parseInt(st.nextToken());
+		M = Integer.parseInt(st.nextToken());
+
+		sharks = new Shark[R + 1][C + 1];
+		end = new Shark[R + 1][C + 1];
+		for (int i = 0; i < M; i++) {
+			st = new StringTokenizer(in.readLine());
+			r = Integer.parseInt(st.nextToken());
+			c = Integer.parseInt(st.nextToken());
+			s = Integer.parseInt(st.nextToken());
+			d = Integer.parseInt(st.nextToken());
+			z = Integer.parseInt(st.nextToken());
+
+			sharks[r][c] = new Shark(s, d, z);
+
+		}
+		pro();
+		System.out.println(ans);
+	}
+
+	private static void pro() {
+		// 1.낚시꾼이동 열기준으로 이동한다.
+		int col = 0;
+		while(true) {
+			col++;
+			if(col > C)break;
+			fishing(col);
+			move();
+		}
+	}
+	private static void fishing(int col) {
+		for(int r=1;r<=R;r++) {
+			if(sharks[r][col]!=null) {
+				ans+=sharks[r][col].size;
+				sharks[r][col] = null;
+				break;
+			}
+		}
+	}
+
+	// 하나의 셀에 있는 상어의 정보는 해당위치의 좌표 (r,c) 그리고 속력과 방향 다음으로 사이즈가 있다.
+	// 하나의 칸에는 하나이상의 상어가 올 수 없다.
+	// 만약 하나의 칸에하나 이상의 상어가 올경우 사이즈가 큰 상어가 그 상어를 먹게 된다.
+
+	private static void move() {
+		for (int i = 1; i <= R; i++) {
+			for (int j = 1; j <= C; j++) {
+				if (sharks[i][j] != null) {
+					Shark now = sharks[i][j];
+					int nexti = i + di[now.dir] * now.speed;
+					int nextj = j + dj[now.dir] * now.speed;
+
+					// 상, 하
+					while (nexti > R || nexti < 1) {
+						// 범위 벗어나면 방향을 바꿈
+						now.dir = reverse(now.dir);
+
+						if (nexti > R) {
+							nexti = R + (R - nexti);
+						} else if (nexti < 1) {
+							nexti = 1 + (1 - nexti);
+						}
+					}
+					// 좌, 우
+					while (nextj > C || nextj < 1) {
+						// 범위 벗어나면 방향을 바꿈
+						now.dir = reverse(now.dir);
+
+						if (nextj > C) {
+							nextj = C + (C - nextj);
+						} else if (nextj < 1) {
+							nextj = 1 + (1 - nextj);
+						}
+					}
+
+					sharks[i][j] = null;
+
+					if (end[nexti][nextj] == null || end[nexti][nextj].size < now.size) {
+						end[nexti][nextj] = now;
+					}
+
+				}
+			}
+		}
+		for (int i = 1; i <= R; i++) {
+			for (int j = 1; j <= C; j++) {
+				sharks[i][j] = end[i][j];
+				end[i][j] = null;
+			}
+		}
+	}
+
+	static void print() {
+		for (int i = 1; i <= R; i++) {
+			for (int j = 1; j <= C; j++) {
+				System.out.print(sharks[i][j] + " ");
+			}
+			System.out.println();
+		}
+		System.out.println("-----------------------------------------");
+	}
+
+	static int reverse(int dir) {
+		switch (dir) {
+		case 1:
+			return 2;
+		case 2:
+			return 1;
+		case 3:
+			return 4;
+		case 4:
+			return 3;
+		}
+		return -1;
+	}
+}
