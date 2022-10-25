@@ -46,7 +46,7 @@ public class BOJ_2607_비슷한단어_김지환 {
             //길이가 같은 경우
             if(len == word2.length()){
             	//이 단어가 첫 단어의 길이가 같거나 하나를 빼도 비슷한 단어이기때문에 카운팅을 한다. 
-            	//DOO -> DOG
+           
                 if(res == len || res==len-1)
                 {
                     ansCnt++;
