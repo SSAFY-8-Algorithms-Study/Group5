@@ -1,0 +1,133 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+import java.util.StringTokenizer;
+
+public class Main {
+	
+	
+	static class Point{
+		int i;
+		int j;
+		public Point(int i, int j) {
+			super();
+			this.i = i;
+			this.j = j;
+		}
+		@Override
+		public String toString() {
+			return "Point [i=" + i + ", j=" + j + "]";
+		}
+	}
+	static int[] di = {-1,1,0,0};
+	static int[] dj = {0,0,-1,1};
+	
+	static char[][] map;
+	static boolean[] isSelected;
+	static int si,sj,ei,ej;
+	static int time, ans,N,M;
+	static List<Point> p;
+	static boolean[][] visited;
+	static int products;
+	static Point[] dist;
+	public static void main(String[] args) throws IOException {
+		BufferedReader in  = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(in.readLine());
+		M = Integer.parseInt(st.nextToken());
+		N = Integer.parseInt(st.nextToken());
+		
+		map = new char[N][M];
+		p = new ArrayList<>();
+		ans = Integer.MAX_VALUE;
+		for(int i=0; i<N; i++) {
+			String str = in.readLine();
+			for(int j=0; j<M; j++) {
+				map[i][j] = str.charAt(j);
+				if(map[i][j] =='S') {
+					si = i;
+					sj = j;
+				}
+				if(map[i][j] == 'E') {
+					ei = i;
+					ej = j;
+				}
+				if(map[i][j] == 'X') {
+					p.add(new Point(i,j));
+					products++;
+				}
+			}
+		}
+		dist = new Point[products];
+		
+		isSelected = new boolean[products];
+		perm(0);
+		System.out.println(ans);
+	}
+	private static void perm(int depth) {
+		if(depth == products) {
+			//X의 좌표를 가져왔으면 S에서 E까지는가는데 X를 다챙기기위한 시간을 갱신해야됨. 
+			List<Point> timeAttack = new ArrayList<>();
+			timeAttack.add(new Point(si,sj));
+			for(Point p : dist) {
+				timeAttack.add(p);
+			}
+			timeAttack.add(new Point(ei,ej));
+			time = 0;
+			for(int i=0; i<timeAttack.size(); i++) {
+				if(i+1 < timeAttack.size()) {
+					visited = new boolean[N][M];
+					time +=bfs(timeAttack.get(i),timeAttack.get(i+1));
+				}
+			}
+			ans = Math.min(ans, time);
+			return;
+		}
+		
+		for(int i =0; i<products; i++) {
+			if(isSelected[i])continue;
+			isSelected[i]=true;
+			dist[depth] = p.get(i);
+			perm(depth+1);
+			isSelected[i] = false;
+		}
+	}
+	private static int bfs(Point point, Point point2) {
+		Queue<Point> queue = new LinkedList<>();
+		int res = 0;
+		queue.add(point);
+		visited[point.i][point.j] = true;
+		while(!queue.isEmpty()) {
+			int size = queue.size();
+			for(int i=0; i<size; i++) {
+				Point now = queue.poll();
+				if(now.i == point2.i && now.j == point2.j) {
+					return res;
+				}
+				for(int d=0;d<4;d++) {
+					int ni = now.i + di[d];
+					int nj = now.j + dj[d];
+					
+					if(isRange(ni,nj)) {
+						if(!visited[ni][nj] && map[ni][nj] !='#'){
+							visited[ni][nj] = true;
+							queue.add(new Point(ni,nj));
+							
+						}
+					}
+				}
+			}
+			res++;
+		}
+		return 0;
+	}
+	private static boolean isRange(int i, int j) {
+		if(i < 0 || i>=N || j< 0 || j>=M)
+			return false;
+		return true;
+	}
+
+}
