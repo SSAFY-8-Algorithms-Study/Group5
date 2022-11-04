@@ -200,7 +200,7 @@ Commit : 공통 양식에 맞춰서 올려주세요 ex) BOJ_문제번호_본인�
 |문제|김아린|김주성|김지환|이현구|
 |------|------|------|------|------|
 |[백준1459](https://www.acmicpc.net/problem/1459)   | |✅| | |  
-|[백준2688](https://www.acmicpc.net/problem/2688)   | | | | |  
+|[백준2688](https://www.acmicpc.net/problem/2688)   | |✅| | |  
 |[백준20437](https://www.acmicpc.net/problem/20437) | | | | |  
 |[백준1956](https://www.acmicpc.net/problem/1956)   | | | | |  
 |[백준21609](https://www.acmicpc.net/problem/21609) | | | | |  
